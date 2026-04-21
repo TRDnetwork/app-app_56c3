@@ -1,0 +1,195 @@
+/* Dawn Brew Component Library - Modal */
+
+:root {
+  /* Modal specific tokens */
+  --modal-overlay-bg: rgba(10, 22, 40, 0.8);
+  --modal-transition: all 0.3s ease;
+  --modal-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --modal-radius: 0.5rem; /* 8px */
+  --modal-padding: 1.5rem;
+  --modal-width: 480px;
+  --modal-max-width: calc(100vw - 2rem);
+  --modal-z-index: 1000;
+}
+
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--modal-overlay-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: var(--modal-z-index);
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--modal-transition);
+}
+
+.modal-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Modal content */
+.modal {
+  position: relative;
+  width: var(--modal-width);
+  max-width: var(--modal-max-width);
+  background-color: #11223A;
+  border: 1px solid #2D3748;
+  border-radius: var(--modal-radius);
+  box-shadow: var(--modal-shadow);
+  transition: var(--modal-transition);
+  transform: scale(0.9);
+  overflow: hidden;
+}
+
+.modal.open {
+  transform: scale(1);
+}
+
+/* Modal header */
+.modal-header {
+  padding: var(--modal-padding);
+  border-bottom: 1px solid #2D3748;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #F8F9FB;
+  margin: 0;
+}
+
+/* Modal close button */
+.modal-close {
+  background: none;
+  border: none;
+  color: #9CA3AF;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: var(--modal-transition);
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: #F8F9FB;
+  background-color: rgba(217, 119, 6, 0.1);
+}
+
+.modal-close:focus {
+  outline: 2px solid #D97706;
+  outline-offset: 2px;
+}
+
+/* Modal body */
+.modal-body {
+  padding: var(--modal-padding);
+  color: #9CA3AF;
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+
+/* Modal footer */
+.modal-footer {
+  padding: var(--modal-padding);
+  border-top: 1px solid #2D3748;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  background-color: #0F1E3A;
+}
+
+/* Modal sizes */
+.modal-sm {
+  --modal-width: 320px;
+}
+
+.modal-lg {
+  --modal-width: 640px;
+}
+
+.modal-full {
+  --modal-width: 90vw;
+  --modal-max-width: 90vw;
+  max-height: 90vh;
+}
+
+/* Modal with no header */
+.modal-no-header .modal-body {
+  padding-top: var(--modal-padding);
+}
+
+/* Modal with no footer */
+.modal-no-footer .modal-body {
+  padding-bottom: var(--modal-padding);
+}
+
+/* Modal animation */
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes modalFadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+
+.modal.open {
+  animation: modalFadeIn 0.3s ease forwards;
+}
+
+.modal-overlay.open {
+  animation: modalFadeIn 0.3s ease forwards;
+}
+
+/* Focus trap styles */
+.modal:focus {
+  outline: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .modal {
+    width: calc(100vw - 2rem);
+    margin: 1rem;
+  }
+  
+  .modal-header,
+  .modal-body,
+  .modal-footer {
+    padding: 1.25rem;
+  }
+  
+  .modal-title {
+    font-size: 1.25rem;
+  }
+}
