@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <meta name="description" content="Dawn Brew — Hand-roasted coffee coming to Karnal Summer 2026. Sign up for updates on our artisanal brews and grand opening."/>
+  <meta name="theme-color" content="#0A1628"/>
+  <meta name="robots" content="index, follow"/>
+
+  <!-- Apple Touch Icons -->
+  <link rel="apple-touch-icon" href="icons/icon-192x192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="icons/icon-512x512.png" sizes="512x512">
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:title" content="Dawn Brew – Hand-Roasted Coffee Coming Summer 2026"/>
+  <meta property="og:description" content="Artisan coffee crafted with care. Opening in Karnal, Summer 2026. Be the first to know."/>
+  <meta property="og:image" content="https://dawnbrew.karnal/images/og-preview.jpg"/>
+  <meta property="og:url" content="https://dawnbrew.karnal"/>
+  <meta property="og:type" content="website"/>
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@dawnbrew_karnal"/>
+  <meta name="twitter:title" content="Dawn Brew – Opening Summer 2026"/>
+  <meta name="twitter:description" content="Hand-roasted coffee rooted in Karnal. Sign up for launch updates."/>
+  <meta name="twitter:image" content="https://dawnbrew.karnal/images/og-preview.jpg"/>
+
+  <title>Dawn Brew – Opening Summer 2026</title>
+
+  <!-- Preload critical font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Inter:wght@300;400;500&display=optional" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <div class="container">
+    <!-- Hero Section -->
+    <section class="hero" role="region" aria-label="Welcome to Dawn Brew">
+      <h1 class="hero-title">Dawn Brew</h1>
+      <p class="hero-tagline">Hand-roasted coffee, rooted in Karnal.<br>Opening Summer 2026.</p>
+      <form id="email-form" class="email-form" novalidate>
+        <label for="email" class="sr-only">Email address</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="your@email.com"
+          aria-label="Enter your email to get updates"
+          required
+          autocomplete="email"
+        />
+        <button type="submit" class="btn-submit" aria-label="Submit email to receive updates">Notify Me</button>
+      </form>
+      <div id="success-message" class="success-message" aria-live="polite" aria-atomic="true"></div>
+    </section>
+
+    <!-- Origin Section -->
+    <main id="main-content">
+      <section class="content-section" role="region" aria-labelledby="origin-title">
+        <h2 id="origin-title" class="section-title">Our Origin</h2>
+        <p class="section-text">
+          Born from early mornings and slow roasts, Dawn Brew began as a quiet ritual in a Karnal kitchen.
+          What started with a single drum roaster has grown into a passion for beans that tell a story —
+          from farm to first light.
+        </p>
+      </section>
+
+      <!-- Brewing Philosophy -->
+      <section class="content-section" role="region" aria-labelledby="brewing-title">
+        <h2 id="brewing-title" class="section-title">The Art of Brewing</h2>
+        <p class="section-text">
+          We believe coffee should be felt, not just tasted. Each batch is hand-roasted in small quantities,
+          allowing us to honor the bean’s origin, season, and soul. No automation. No shortcuts.
+          Just time, heat, and attention.
+        </p>
+      </section>
+
+      <!-- Location -->
+      <section class="content-section" role="region" aria-labelledby="location-title">
+        <h2 id="location-title" class="section-title">Find Us in Karnal</h2>
+        <p class="section-text">
+          Nestled near the old market square, our space is designed for stillness.
+          Wooden counters, warm light, and the quiet hum of grinding beans.
+          Come for the coffee. Stay for the calm.
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      <p class="footer-text">Follow our journey:</p>
+      <div class="social-links" role="navigation" aria-label="Social media links">
+        <a href="https://instagram.com/dawnbrew_karnal" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          Instagram
+        </a>
+        <span class="separator" aria-hidden="true">|</span>
+        <a href="https://twitter.com/dawnbrew_karnal" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          Twitter
+        </a>
+      </div>
+      <p class="footer-credit">© <span id="current-year">2024</span> Dawn Brew. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
