@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60">
+  <defs>
+    <linearGradient id="logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#ea8a1a" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Coffee cup icon -->
+  <path d="M20 20 L30 15 L40 20 L35 35 L25 35 Z" fill="url(#logo-gradient)" stroke="#0F1E3A" stroke-width="1"/>
+  <circle cx="30" cy="27" r="3" fill="#F8FAFC" opacity="0.9"/>
+  <path d="M30 22 L30 32" stroke="#0A1628" stroke-width="1"/>
+  
+  <!-- Text -->
+  <text x="55" y="35" fill="#F8FAFC" font-family="'Playfair Display', serif" font-size="28" font-weight="700" letter-spacing="-0.02em">
+    Dawn Brew
+  </text>
+  <text x="55" y="50" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="12">
+    Hand-Roasted Coffee
+  </text>
+</svg>

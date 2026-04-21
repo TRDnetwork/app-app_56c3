@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dawn Brew - Color Palette</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      background: #0A1628; 
+      color: #F8FAFC; 
+      font-family: 'Inter', sans-serif; 
+      padding: 2rem;
+    }
+    .container { max-width: 800px; margin: 0 auto; }
+    h1 { 
+      font-family: 'Playfair Display', serif; 
+      color: #D97706; 
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .palette-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+    .color-card {
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid #1E293B;
+    }
+    .color-swatch {
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .color-info {
+      padding: 1rem;
+      background: #0F1E3A;
+    }
+    .color-name { font-weight: 600; margin-bottom: 0.25rem; }
+    .color-hex { color: #94A3B8; font-size: 0.875rem; }
+    .usage { margin-top: 3rem; }
+    .usage-item {
+      background: #0F1E3A;
+      padding: 1rem;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+      border-left: 4px solid #D97706;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Dawn Brew Color Palette</h1>
+    
+    <div class="palette-grid">
+      <div class="color-card">
+        <div class="color-swatch" style="background: #0A1628;">
+          <span style="color: #F8FAFC; font-weight: 600;">Background</span>
+        </div>
+        <div class="color-info">
+          <div class="color-name">Background</div>
+          <div class="color-hex">#0A1628</div>
+        </div>
+      </div>
+      
+      <div class="color-card">
+        <div class="color-swatch" style="background: #0F1E3A;">
+          <span style="color: #F8FAFC; font-weight: 600;">Surface</span>
+        </div>
+        <div class="color-info">
+          <div class="color-name">Surface</div>
+          <div class="color-hex">#0F1E3A</div>
+        </div>
+      </div>
+      
+      <div class="color-card">
+        <div class="color-swatch" style="background: #F8FAFC;">
+          <span style="color: #0A1628; font-weight: 600;">Text Primary</span>
+        </div>
+        <div class="color-info">
+          <div class="color-name">Text Primary</div>
+          <div class="color-hex">#F8FAFC</div>
+        </div>
+      </div>
+      
+      <div class="color-card">
+        <div class="color-swatch" style="background: #94A3B8;">
+          <span style="color: #0A1628; font-weight: 600;">Text Dim</span>
+        </div>
+        <div class="color-info">
+          <div class="color-name">Text Dim</div>
+          <div class="color-hex">#94A3B8</div>
+        </div>
+      </div>
+      
+      <div class="color-card">
+        <div class="color-swatch" style="background: #D97706;">
+          <span style="color: #0A1628; font-weight: 600;">Accent</span>
+        </div>
+        <div class="color-info">
+          <div class="color-name">Accent (Amber)</div>
+          <div class="color-hex">#D97706</div>
+        </div>
+      </div>
+      
+      <div class="color-card">
+        <div class="color-swatch" style="background: #1E293B;">
+          <span style="color: #F8FAFC; font-weight: 600;">Border</span>
+        </div>
+        <div class="color-info">
+          <div class="color-name">Border</div>
+          <div class="color-hex">#1E293B</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="usage">
+      <h2 style="color: #D97706; margin-bottom: 1rem;">Usage Guidelines</h2>
+      
+      <div class="usage-item">
+        <strong>Background (#0A1628):</strong> Main page background, footer background
+      </div>
+      
+      <div class="usage-item">
+        <strong>Surface (#0F1E3A):</strong> Content cards, form inputs, navigation elements
+      </div>
+      
+      <div class="usage-item">
+        <strong>Accent (#D97706):</strong> Primary buttons, hover states, social links, highlights
+      </div>
+      
+      <div class="usage-item">
+        <strong>Text Primary (#F8FAFC):</strong> Headings, important text, navigation items
+      </div>
+      
+      <div class="usage-item">
+        <strong>Text Dim (#94A3B8):</strong> Body text, captions, form placeholders, secondary information
+      </div>
+    </div>
+  </div>
+</body>
+</html>

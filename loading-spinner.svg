@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="spinner-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#ea8a1a" />
+    </linearGradient>
+  </defs>
+  <circle cx="24" cy="24" r="20" stroke="#1E293B" stroke-width="4" fill="none"/>
+  <circle cx="24" cy="24" r="20" stroke="url(#spinner-gradient)" stroke-width="4" fill="none" stroke-linecap="round">
+    <animateTransform attributeName="transform" type="rotate" from="0 24 24" to="360 24 24" dur="1s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-dasharray" values="1,150;90,150;1,150" dur="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-dashoffset" values="0;-35;-124" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>
