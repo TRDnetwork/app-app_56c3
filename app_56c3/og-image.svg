@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0A1628"/>
+  
+  <!-- Branding -->
+  <text x="600" y="180" text-anchor="middle" font-family="Playfair Display, serif" 
+        font-size="72" font-weight="700" fill="#F8F9FB">
+    Dawn Brew
+  </text>
+  
+  <!-- Tagline -->
+  <text x="600" y="250" text-anchor="middle" font-family="Inter, sans-serif" 
+        font-size="32" fill="#D97706">
+    Hand-roasted in Karnal. Opening Summer 2026.
+  </text>
+  
+  <!-- Abstract coffee elements -->
+  <circle cx="400" cy="400" r="80" fill="none" stroke="#D97706" stroke-width="3" opacity="0.3"/>
+  <circle cx="800" cy="350" r="60" fill="none" stroke="#D97706" stroke-width="2" opacity="0.2"/>
+  
+  <!-- Steam lines -->
+  <path d="M580 280 Q590 240 600 280 T620 280" fill="none" stroke="#9CA3AF" stroke-width="2" opacity="0.4"/>
+  <path d="M600 280 Q610 220 620 280 T640 280" fill="none" stroke="#9CA3AF" stroke-width="2" opacity="0.3"/>
+  <path d="M620 280 Q630 200 640 280 T660 280" fill="none" stroke="#9CA3AF" stroke-width="2" opacity="0.2"/>
+  
+  <!-- Accent bar -->
+  <rect x="300" y="550" width="600" height="8" fill="#D97706" opacity="0.2"/>
+</svg>

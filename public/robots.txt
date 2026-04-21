@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dawnbrew.karnal/sitemap.xml
+Sitemap: https://dawnbrew.com/sitemap.xml

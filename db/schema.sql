@@ -1,1 +1,1 @@
--- No database required — static landing page with UI-only email form. All content is client-rendered with no user data storage or backend integration.
+-- No database required — static landing page with UI-only email form. All functionality handled client-side with vanilla JavaScript.

@@ -1,20 +1,24 @@
-# Dawn Brew Landing Page — Deployment Guide
+# Deploy to Vercel
 
-## Deploy to Vercel
-1. Go to [vercel.com](https://vercel.com)
-2. Import your GitHub repository
-3. Select the project root as deployment target
-4. Click "Deploy" — no build command or output directory needed
-5. Once deployed, set your custom domain (optional)
+1. Push code to GitHub repository
+2. Log in to Vercel and import the project from GitHub
+3. Confirm the following settings:
+   - Framework: Auto-detected (static HTML)
+   - Root directory: project root
+   - Build command: none
+   - Output directory: project root
+4. Click "Deploy"
 
-## Environment Variables
-None required. This is a static HTML site with:
-- UI-only email form (client-side validation only)
-- No backend API
+# Environment Variables
+
+No environment variables are needed for this static site.
+
+# First-time setup
+
+No setup required. This is a static HTML site with:
 - No database
 - No authentication
+- No API integrations
+- No backend services
 
-## First-time Setup
-None needed. The site is fully static and requires no database setup, schema migration, or service configuration.
-
-> ✅ Tip: Vercel auto-detects this as a static site. No `vercel.json` is needed — removing it improves framework detection.
+All content is built into the HTML, CSS, and JS files.

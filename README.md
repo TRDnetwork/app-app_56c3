@@ -1,1 +1,5 @@
-No Supabase backend required for this project. The Dawn Brew landing page is a static site with client-side form handling only — no database, authentication, or serverless functions needed. The email signup form provides a fake success message without any actual submission or backend call. All functionality is implemented in vanilla HTML, CSS, and JavaScript as specified in the architect's plan.
+# Dawn Brew Coming Soon Page
+
+A minimalist, dark-themed landing page for **Dawn Brew** — a hand-roasted coffee shop opening in Karnal, Summer 2026.
+
+Crafted with clean HTML, CSS, and minimal JavaScript, this static site emphasizes elegance, anticipation, and craftsmanship — mirroring the brand’s artisanal values.

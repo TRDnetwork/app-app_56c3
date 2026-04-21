@@ -1,88 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head><script>window.__SUPABASE_URL__="https://wmxnwapnfurwoalvkkwh.supabase.co";window.__SUPABASE_ANON_KEY__="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndteG53YXBuZnVyd29hbHZra3doIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzU5MDgwODEsImV4cCI6MjA5MTQ4NDA4MX0.BNgF4LD35_Ooxtkv5Pok8ldrBeHPOCDauv-ZYG1v7_Q";</script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dawn Brew</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main>
-      <!-- Hero Section -->
-      <section class="hero">
-        <h1>Dawn Brew</h1>
-        <p class="tagline">Hand-roasted in Karnal. Opening Summer 2026.</p>
-        <form id="signup-form" class="signup-form">
-          <input
-            type="email"
-            id="email"
-            placeholder="Enter your email"
-            aria-label="Enter your email"
-            required
-          />
-          <button type="submit">Notify Me</button>
-          <p id="form-message" class="form-message" aria-live="polite"></p>
-        </form>
-      </section>
+<head><script>window.__SUPABASE_URL__="https://wmxnwapnfurwoalvkkwh.supabase.co";window.__SUPABASE_ANON_KEY__="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndteG53YXBuZnVyd29hbHZra3doIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzU5MDgwODEsImV4cCI6MjA5MTQ4NDA4MX0.BNgF4LD35_Ooxtkv5Pok8ldrBeHPOCDauv-ZYG1v7_Q";</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dawn Brew</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Dawn Brew</h1>
+      <p class="tagline">Hand-roasted coffee, crafted with care in Karnal.</p>
+      <form id="signup-form" class="signup-form">
+        <label for="email" class="sr-only">Enter your email</label>
+        <input type="email" id="email" name="email" placeholder="Your email address" required />
+        <button type="submit">Stay Updated</button>
+      </form>
+      <div id="success-message" class="success-message" aria-live="polite"></div>
+    </section>
 
-      <!-- Content Sections -->
-      <section class="content-section">
-        <h2>Our Origin</h2>
-        <p>
-          Born from quiet mornings and the rich soil of Karnal, Dawn Brew began
-          as a small dream to craft coffee with intention. Every bean is sourced
-          from ethical farms, roasted in small batches, and handled with care.
-        </p>
-      </section>
+    <!-- Origin Section -->
+    <section class="content-section">
+      <h2>Our Origin</h2>
+      <p>Every bean is sourced from small farms committed to sustainable growing practices. We believe quality begins at the root — healthy soil, ethical labor, and time-honored cultivation.</p>
+    </section>
 
-      <section class="content-section">
-        <h2>The Art of Brewing</h2>
-        <p>
-          We believe coffee is more than a drink — it's a ritual. Our roasting
-          process honors tradition while embracing precision, bringing out
-          nuanced flavors in every cup. From first light to final pour, we do it
-          by hand.
-        </p>
-      </section>
+    <!-- Brewing Section -->
+    <section class="content-section">
+      <h2>The Craft of Brewing</h2>
+      <p>Our roasting process is entirely hands-on. Each batch is monitored for aroma, color, and temperature to unlock the full character of the bean. This isn’t mass production — it’s a ritual.</p>
+    </section>
 
-      <section class="content-section">
-        <h2>Coming to Karnal</h2>
-        <p>
-          Nestled in the heart of Karnal, our upcoming café will be a haven for
-          early risers and slow sippers alike. Warm wood, soft light, and the
-          scent of fresh roast — a space designed to welcome the day.
-        </p>
-      </section>
-    </main>
+    <!-- Location Section -->
+    <section class="content-section">
+      <h2>Coming to Karnal</h2>
+      <p>Summer 2026 marks the opening of our first café in the heart of Karnal. Designed for slow mornings and deep conversations, it will be a space where community and craftsmanship meet.</p>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
-      <p>Follow our journey</p>
       <div class="social-links">
-        <a
-          href="https://instagram.com/dawnbrew"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Instagram"
-          >Instagram</a
-        >
-        <a
-          href="https://twitter.com/dawnbrew"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Twitter"
-          >Twitter</a
-        >
+        <a href="https://instagram.com/dawnbrew" target="_blank" aria-label="Follow us on Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="2" width="20" height="20" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <path d="M16 8v.01" />
+          </svg>
+        </a>
+        <a href="https://twitter.com/dawnbrew" target="_blank" aria-label="Follow us on Twitter">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.6-1.5 2.8-3.7 3-6z"/>
+          </svg>
+        </a>
       </div>
       <p class="copyright">&copy; 2026 Dawn Brew. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
-  </body>
+  </main>
+  <script src="script.js"></script>
+</body>
 </html>

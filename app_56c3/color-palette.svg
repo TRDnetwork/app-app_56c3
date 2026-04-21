@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="200" viewBox="0 0 400 200">
+  <rect width="400" height="200" fill="#0A1628"/>
+  
+  <!-- Color swatches -->
+  <rect x="40" y="40" width="60" height="60" rx="8" fill="#0A1628"/>
+  <text x="40" y="120" font-family="Inter, sans-serif" font-size="12" fill="#9CA3AF">Background: #0A1628</text>
+  
+  <rect x="120" y="40" width="60" height="60" rx="8" fill="#11223A"/>
+  <text x="120" y="120" font-family="Inter, sans-serif" font-size="12" fill="#9CA3AF">Surface: #11223A</text>
+  
+  <rect x="200" y="40" width="60" height="60" rx="8" fill="#D97706"/>
+  <text x="200" y="120" font-family="Inter, sans-serif" font-size="12" fill="#9CA3AF">Accent: #D97706</text>
+  
+  <rect x="280" y="40" width="60" height="60" rx="8" fill="#10B981"/>
+  <text x="280" y="120" font-family="Inter, sans-serif" font-size="12" fill="#9CA3AF">Success: #10B981</text>
+  
+  <!-- Logo sample -->
+  <text x="40" y="160" font-family="Playfair Display, serif" font-size="24" font-weight="700" fill="#D97706">Dawn Brew</text>
+</svg>
