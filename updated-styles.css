@@ -1,0 +1,180 @@
+/* Updated Main Styles with Design System Integration */
+@import url('design-tokens.css');
+@import url('components.css');
+@import url('utilities.css');
+
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: var(--leading-normal);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-6);
+  flex: 1;
+}
+
+/* Typography */
+.hero-title {
+  font-family: var(--font-display);
+  font-size: var(--text-6xl);
+  font-weight: var(--font-bold);
+  color: var(--color-text);
+  text-align: center;
+  letter-spacing: -0.025em;
+  margin-bottom: var(--space-4);
+}
+
+.hero-tagline {
+  font-size: var(--text-xl);
+  color: var(--color-accent);
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: var(--text-4xl);
+  color: var(--color-text);
+  margin-bottom: var(--space-4);
+  letter-spacing: -0.025em;
+}
+
+.section-text {
+  font-size: var(--text-base);
+  color: var(--color-text-dim);
+  margin-bottom: var(--space-10);
+}
+
+.footer-text {
+  color: var(--color-text-dim);
+  font-size: var(--text-sm);
+  text-align: center;
+  margin-top: var(--space-4);
+}
+
+/* Form Styles */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.email-input {
+  width: 100%;
+  max-width: 380px;
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-base);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text);
+  outline: none;
+  transition: border var(--transition-base), box-shadow var(--transition-base);
+}
+
+.email-input:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.2);
+}
+
+.submit-btn {
+  padding: var(--space-3) var(--space-6);
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  color: var(--color-text);
+  background-color: var(--color-accent);
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: background var(--transition-base), transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.submit-btn:hover {
+  background-color: #ea8a1a;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-accent);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+/* Success Message */
+.success-message {
+  color: var(--color-success);
+  font-size: var(--text-base);
+  text-align: center;
+  opacity: 0;
+  transition: opacity var(--transition-base), transform var(--transition-base);
+  margin-top: var(--space-2);
+}
+
+.success-message.visible {
+  opacity: 1;
+  transform: translateY(-5px);
+}
+
+.success-message.hidden {
+  opacity: 0;
+}
+
+/* Content Sections */
+.content-section {
+  background-color: var(--color-surface);
+  padding: var(--space-8);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  margin-bottom: var(--space-8);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: var(--space-8) var(--space-6);
+  background-color: var(--color-bg);
+  margin-top: auto;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.social-link {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: var(--font-semibold);
+  font-size: var(--text-base);
+  transition: color var(--transition-base), text-shadow var(--transition-base);
+}
+
+.social-link:hover {
+  color: #ea8a1a;
+  text-shadow: 0 0 8px rgba(217, 119, 6, 0.4);
+}
+
+.separator {
+  color: var(--color-border);
+}
+
+/* Responsive Design */
+@media (max-width: 768px
